@@ -53,3 +53,32 @@ You are an expert in TypeScript, Angular, and scalable web application developme
 - Design services around a single responsibility
 - Use the `providedIn: 'root'` option for singleton services
 - Use the `inject()` function instead of constructor injection
+
+## Project Context: Buried Proof
+
+This repository contains a narrative-driven whodunit detective game built with Angular.
+
+### Project Goals
+- Maintain a small and deliverable MVP
+- Focus on investigation gameplay (evidence, suspects, deduction)
+- Keep the architecture simple and easy to extend
+
+### Architecture Constraints
+- No backend integration for the MVP
+- Game data is stored locally (mock data)
+- Avoid introducing external libraries unless explicitly requested
+
+### Folder Structure
+
+Feature-based structure should be preferred:
+
+src/app/
+- core/ (future app-wide services)
+- shared/ (models, utilities, shared UI)
+- features/ (game features)
+
+Examples:
+- features/intro
+- features/case-overview
+- features/evidence
+- features/suspects
