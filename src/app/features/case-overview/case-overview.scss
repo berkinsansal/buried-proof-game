@@ -1,0 +1,41 @@
+:host {
+  display: block;
+}
+
+.case-overview {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 48px 24px;
+  display: grid;
+  gap: 20px;
+}
+
+.eyebrow {
+  margin: 0;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+h1 {
+  margin: 0;
+}
+
+.overview {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.detail-card {
+  display: grid;
+  gap: 8px;
+  padding: 20px;
+  border: 1px solid #d0d0d0;
+  border-radius: 12px;
+}
+
+.label {
+  font-size: 14px;
+  opacity: 0.7;
+}
