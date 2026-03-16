@@ -2,12 +2,17 @@
   display: block;
 }
 
-.case-overview {
-  max-width: 720px;
+.suspects-page {
+  max-width: 900px;
   margin: 0 auto;
   padding: 48px 24px;
   display: grid;
-  gap: 20px;
+  gap: 24px;
+}
+
+.page-header {
+  display: grid;
+  gap: 12px;
 }
 
 .eyebrow {
@@ -18,16 +23,22 @@
   opacity: 0.7;
 }
 
-h1 {
+h1,
+h2,
+p {
   margin: 0;
 }
 
-.overview {
-  margin: 0;
+.description {
   line-height: 1.6;
 }
 
-.detail-card {
+.suspect-list {
+  display: grid;
+  gap: 16px;
+}
+
+.suspect-card {
   display: grid;
   gap: 8px;
   padding: 20px;
@@ -35,11 +46,15 @@ h1 {
   border-radius: 12px;
 }
 
-.label {
-  font-size: 14px;
-  opacity: 0.7;
+.role {
+  font-weight: 600;
+  opacity: 0.8;
 }
 
-.next-link {
+.summary {
+  line-height: 1.6;
+}
+
+.back-link {
   width: fit-content;
 }

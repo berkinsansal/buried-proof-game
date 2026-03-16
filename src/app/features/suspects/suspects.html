@@ -1,0 +1,21 @@
+<section class="suspects-page">
+  <header class="page-header">
+    <p class="eyebrow">Investigation</p>
+    <h1>Suspects</h1>
+    <p class="description">
+      Review the people connected to the case and examine their possible motives.
+    </p>
+  </header>
+
+  <div class="suspect-list">
+    @for (suspect of suspects; track suspect.id) {
+      <article class="suspect-card">
+        <h2>{{ suspect.name }}</h2>
+        <p class="role">{{ suspect.role }}</p>
+        <p class="summary">{{ suspect.summary }}</p>
+      </article>
+    }
+  </div>
+
+  <a class="back-link" routerLink="/case">← Back to Case File</a>
+</section>
