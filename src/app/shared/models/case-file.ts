@@ -1,5 +1,6 @@
 import { Evidence } from './evidence';
 import { Suspect } from './suspect';
+import { TimelineEvent } from './timeline-event';
 
 export interface CaseFile {
   id: string;
@@ -8,4 +9,5 @@ export interface CaseFile {
   victim: string;
   suspects: Suspect[];
   evidence: Evidence[];
+  timeline: TimelineEvent[];
 }

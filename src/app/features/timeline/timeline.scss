@@ -2,7 +2,7 @@
   display: block;
 }
 
-.evidence-page {
+.timeline-page {
   max-width: 900px;
   margin: 0 auto;
   padding: 48px 24px;
@@ -30,41 +30,29 @@ p {
 }
 
 .description,
-.description-text,
 .summary {
   line-height: 1.6;
 }
 
-.evidence-list {
+.timeline-list {
   display: grid;
   gap: 16px;
 }
 
-.evidence-card {
+.timeline-item {
   display: grid;
-  gap: 12px;
+  gap: 8px;
   padding: 20px;
   border: 1px solid #d0d0d0;
   border-radius: 12px;
 }
 
-.card-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-}
-
-.type {
+.time {
   font-size: 13px;
   text-transform: uppercase;
   opacity: 0.7;
 }
 
 .back-link {
-  width: fit-content;
-}
-
-.next-link {
   width: fit-content;
 }
