@@ -1,0 +1,25 @@
+<section class="evidence-page">
+  <header class="page-header">
+    <p class="eyebrow">Investigation</p>
+    <h1>Evidence</h1>
+    <p class="description">
+      Review the collected evidence and look for contradictions, motives, and hidden connections.
+    </p>
+  </header>
+
+  <div class="evidence-list">
+    @for (evidence of evidenceList; track evidence.id) {
+      <article class="evidence-card">
+        <div class="card-header">
+          <h2>{{ evidence.title }}</h2>
+          <span class="type">{{ evidence.type }}</span>
+        </div>
+
+        <p class="summary">{{ evidence.summary }}</p>
+        <p class="description-text">{{ evidence.description }}</p>
+      </article>
+    }
+  </div>
+
+  <a class="back-link" routerLink="/suspects">← Back to Suspects</a>
+</section>

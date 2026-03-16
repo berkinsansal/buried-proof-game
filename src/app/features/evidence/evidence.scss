@@ -2,7 +2,7 @@
   display: block;
 }
 
-.suspects-page {
+.evidence-page {
   max-width: 900px;
   margin: 0 auto;
   padding: 48px 24px;
@@ -29,36 +29,38 @@ p {
   margin: 0;
 }
 
-.description {
+.description,
+.description-text,
+.summary {
   line-height: 1.6;
 }
 
-.suspect-list {
+.evidence-list {
   display: grid;
   gap: 16px;
 }
 
-.suspect-card {
+.evidence-card {
   display: grid;
-  gap: 8px;
+  gap: 12px;
   padding: 20px;
   border: 1px solid #d0d0d0;
   border-radius: 12px;
 }
 
-.role {
-  font-weight: 600;
-  opacity: 0.8;
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
 }
 
-.summary {
-  line-height: 1.6;
+.type {
+  font-size: 13px;
+  text-transform: uppercase;
+  opacity: 0.7;
 }
 
 .back-link {
-  width: fit-content;
-}
-
-.next-link {
   width: fit-content;
 }

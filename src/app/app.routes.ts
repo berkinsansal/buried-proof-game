@@ -1,5 +1,6 @@
 import { Routes } from '@angular/router';
 import { CaseOverview } from './features/case-overview/case-overview';
+import { Evidence } from './features/evidence/evidence';
 import { Intro } from './features/intro/intro';
 import { Suspects } from './features/suspects/suspects';
 
@@ -15,5 +16,9 @@ export const routes: Routes = [
   {
     path: 'suspects',
     component: Suspects,
+  },
+  {
+    path: 'evidence',
+    component: Evidence,
   },
 ];
